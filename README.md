@@ -4,7 +4,7 @@ Panduan Instalasi Utuh Web App Final Project Data Warehouse - Data Warehouse Par
 2. Pindahkan source code aplikasi web tersebut ke direktori C:\xampp\htdocs.  
 3. Buka source code aplikasi web menggunakan Visual Studio Code atau editor teks favorit Anda.  
 4. Dalam source code, Anda akan menemukan folder database berisi uasdwo.sql dwuas.sql. Buat database baru di XAMPP, lalu impor file tersebut agar aplikasi web dapat terhubung dengan database.  
-5  Salin file mondrianuas.xml, mondrianuas.jsp, ke direktori C:\xampp\tomcat\webapps\mondrian\WEB-INF\queries. Pastikan Mondrian.war sudah terinstall serta plugin mysql-connector, jtds & sqljdbc. 
+5. Salin file mondrianuas.xml, mondrianuas.jsp, ke direktori C:\xampp\tomcat\webapps\mondrian\WEB-INF\queries. Pastikan Mondrian.war sudah terinstall serta plugin mysql-connector, jtds & sqljdbc. 
 6. Untuk koneksi database, gunakan username root dan password kosong (`""`), yang merupakan kredensial default pada XAMPP. Jika kredensial XAMPP Anda berbeda, sesuaikan dengan mengubah source code.  
 7. Buka terminal atau Command Prompt, arahkan ke direktori source code aplikasi web, lalu jalankan perintah npm install untuk menginstal semua library JavaScript yang diperlukan.  
 8. Ketikkan perintah npm start untuk membangun (build) aplikasi web agar file library yang diperlukan ter-generate.  
