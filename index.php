@@ -47,7 +47,7 @@
             <div class="col-md-8">
               <div class="mb-4">
                 <h1>LOGIN</h1>
-                <p class="mb-4">DASHBOARD ADVENTURE WORKS</p>
+                <p class="mb-4">DASHBOARD UASDWO</p>
               </div>
               <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
                 <div class="form-group first">
