@@ -1,0 +1,36 @@
+<Cube name="Sales">
+    <!-- Dimensi Tahun -->
+    <Dimension name="Tahun">
+        <Hierarchy name="Tahun" primaryKey="TimeID">
+            <Level name="Nama Tahun" column="Tahun"/>
+        </Hierarchy>
+    </Dimension>
+
+    <!-- Dimensi Wilayah -->
+    <Dimension name="Wilayah">
+        <Hierarchy name="Wilayah" primaryKey="TerritoryID">
+            <Level name="Nama Wilayah" column="TerritoryName"/>
+        </Hierarchy>
+    </Dimension>
+
+    <!-- Dimensi Produk -->
+    <Dimension name="Produk">
+        <Hierarchy name="Produk" primaryKey="ProductID">
+            <Level name="Nama Produk" column="ProductName"/>
+        </Hierarchy>
+    </Dimension>
+
+    <!-- Dimensi Customer -->
+    <Dimension name="Customer">
+        <Hierarchy name="Customer" primaryKey="CustomerID">
+            <Level name="Nama Customer" column="CustomerName"/>
+        </Hierarchy>
+    </Dimension>
+
+    <!-- Measure Total Penjualan -->
+    <Measure name="Total Penjualan" column="SalesAmount" aggregator="sum">
+        <Formula>
+            SUM([SalesAmount])
+        </Formula>
+    </Measure>
+</Cube>
